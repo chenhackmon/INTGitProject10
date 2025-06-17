@@ -1,0 +1,16 @@
+Index: app.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from flask import Flask, send_file, request\n\napp = Flask(__name__)\n\n\n@app.route(\"/\")\ndef home():\n    return \"Welcome to my web server!\"\n\n\n@app.route(\"/status\")\ndef home():\n    return \"OK\"\n\n\n@app.route(\"/blog\")\ndef blog():\n    return \"Check out my latest blog post at example.com/blog.\"\n\n\n@app.route(\"/pricing\")\ndef pricing():\n    return \"Our pricing for web development starts at $55 per hour.\"\n\n\n@app.route(\"/contact\")\ndef contact():\n    return \"You can contact us at contact@example.com or info@example.com.\"\n\n\n@app.route(\"/chat\")\ndef contact():\n    return \"You can chat with live agent!\"\n\n\n\n@app.route(\"/services\")\ndef services():\n    return \"We offer the following services: web development, data analysis, SEO.\"\n\n@app.route(\"/internal\")\ndef home():\n    return \"System management portal\"\n\nif __name__ == \"__main__\":\n    app.run(debug=True, port=8081, host=\"0.0.0.0\")\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app.py b/app.py
+--- a/app.py	(revision cf0b7e551cf94493ff873387f2473370b171024a)
++++ b/app.py	(date 1750174410533)
+@@ -46,3 +46,4 @@
+     app.run(debug=True, port=8081, host="0.0.0.0")
+ 
+ 
++#
+\ No newline at end of file
