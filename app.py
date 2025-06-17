@@ -22,7 +22,7 @@ def blog():
 def pricing():
     return "Our pricing for web development starts at $55 per hour."
 
-#
+
 @app.route("/contact")
 def contact():
     return "You can contact us at contact@example.com or info@example.com."
