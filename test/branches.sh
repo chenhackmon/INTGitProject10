@@ -19,7 +19,7 @@ function check_n_commits_by_msg {
     exit 1
   fi
 }
-#
+
 function check_n_parents {
   local commit_id=$1
   local expected_p=$2
